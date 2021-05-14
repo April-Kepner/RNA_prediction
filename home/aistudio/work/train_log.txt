@@ -1,0 +1,650 @@
+2021-05-11 18:10:28.557785
+# python3 src/main_base.py train --model-path-base model
+# Training set contains 4750 Sequences.
+# Validation set contains 250 Sequences.
+# Paddle: Using device: CUDAPlace(0)
+# Initializing model...
+initializing vacabularies... done.
+Sequence(6): ['<START>', '<STOP>', 'A', 'C', 'G', 'U']
+Brackets(5): ['<START>', '<STOP>', '(', ')', '.']
+# Checking validation 10 times an epoch (every 475 batches)
+# Epoch 1 starting.
+epoch 1 batch 1 processed 32 batch-loss 0.5037 epoch-elapsed 0h00m00s total-elapsed 0h00m06s 
+epoch 1 batch 2 processed 64 batch-loss 0.4761 epoch-elapsed 0h00m01s total-elapsed 0h00m07s 
+epoch 1 batch 3 processed 96 batch-loss 0.4668 epoch-elapsed 0h00m02s total-elapsed 0h00m08s 
+epoch 1 batch 4 processed 128 batch-loss 0.4623 epoch-elapsed 0h00m03s total-elapsed 0h00m08s 
+epoch 1 batch 5 processed 160 batch-loss 0.4174 epoch-elapsed 0h00m04s total-elapsed 0h00m09s 
+epoch 1 batch 6 processed 192 batch-loss 0.4132 epoch-elapsed 0h00m05s total-elapsed 0h00m10s 
+epoch 1 batch 7 processed 224 batch-loss 0.3823 epoch-elapsed 0h00m05s total-elapsed 0h00m11s 
+epoch 1 batch 8 processed 256 batch-loss 0.3979 epoch-elapsed 0h00m06s total-elapsed 0h00m12s 
+epoch 1 batch 9 processed 288 batch-loss 0.3887 epoch-elapsed 0h00m07s total-elapsed 0h00m12s 
+epoch 1 batch 10 processed 320 batch-loss 0.3562 epoch-elapsed 0h00m08s total-elapsed 0h00m13s 
+epoch 1 batch 11 processed 352 batch-loss 0.3660 epoch-elapsed 0h00m09s total-elapsed 0h00m14s 
+epoch 1 batch 12 processed 384 batch-loss 0.3247 epoch-elapsed 0h00m10s total-elapsed 0h00m15s 
+epoch 1 batch 13 processed 416 batch-loss 0.3801 epoch-elapsed 0h00m10s total-elapsed 0h00m16s 
+epoch 1 batch 14 processed 448 batch-loss 0.3590 epoch-elapsed 0h00m11s total-elapsed 0h00m17s 
+epoch 1 batch 15 processed 480 batch-loss 0.3606 epoch-elapsed 0h00m12s total-elapsed 0h00m18s 
+# Dev Average Loss: 0.422 (MSE) -> 0.649 (RMSD)
+* Saving new best model to model_dev=0.4217...
+epoch 1 batch 16 processed 512 batch-loss 0.3434 epoch-elapsed 0h00m33s total-elapsed 0h00m39s 
+epoch 1 batch 17 processed 544 batch-loss 0.3453 epoch-elapsed 0h00m34s total-elapsed 0h00m40s 
+epoch 1 batch 18 processed 576 batch-loss 0.3369 epoch-elapsed 0h00m35s total-elapsed 0h00m40s 
+epoch 1 batch 19 processed 608 batch-loss 0.3274 epoch-elapsed 0h00m36s total-elapsed 0h00m41s 
+epoch 1 batch 20 processed 640 batch-loss 0.3242 epoch-elapsed 0h00m37s total-elapsed 0h00m42s 
+epoch 1 batch 21 processed 672 batch-loss 0.3157 epoch-elapsed 0h00m37s total-elapsed 0h00m43s 
+epoch 1 batch 22 processed 704 batch-loss 0.3278 epoch-elapsed 0h00m38s total-elapsed 0h00m44s 
+epoch 1 batch 23 processed 736 batch-loss 0.3320 epoch-elapsed 0h00m39s total-elapsed 0h00m44s 
+epoch 1 batch 24 processed 768 batch-loss 0.3496 epoch-elapsed 0h00m40s total-elapsed 0h00m45s 
+epoch 1 batch 25 processed 800 batch-loss 0.3231 epoch-elapsed 0h00m41s total-elapsed 0h00m46s 
+epoch 1 batch 26 processed 832 batch-loss 0.3146 epoch-elapsed 0h00m41s total-elapsed 0h00m47s 
+epoch 1 batch 27 processed 864 batch-loss 0.3244 epoch-elapsed 0h00m42s total-elapsed 0h00m48s 
+epoch 1 batch 28 processed 896 batch-loss 0.3084 epoch-elapsed 0h00m43s total-elapsed 0h00m49s 
+epoch 1 batch 29 processed 928 batch-loss 0.3080 epoch-elapsed 0h00m44s total-elapsed 0h00m50s 
+epoch 1 batch 30 processed 960 batch-loss 0.3140 epoch-elapsed 0h00m45s total-elapsed 0h00m51s 
+# Dev Average Loss: 0.379 (MSE) -> 0.616 (RMSD)
+* Removing previous model file model/model_dev=0.4217...
+* Saving new best model to model_dev=0.3789...
+epoch 1 batch 31 processed 992 batch-loss 0.3325 epoch-elapsed 0h01m06s total-elapsed 0h01m12s 
+epoch 1 batch 32 processed 1,024 batch-loss 0.2982 epoch-elapsed 0h01m07s total-elapsed 0h01m13s 
+epoch 1 batch 33 processed 1,056 batch-loss 0.3055 epoch-elapsed 0h01m08s total-elapsed 0h01m14s 
+epoch 1 batch 34 processed 1,088 batch-loss 0.2875 epoch-elapsed 0h01m09s total-elapsed 0h01m14s 
+epoch 1 batch 35 processed 1,120 batch-loss 0.3181 epoch-elapsed 0h01m10s total-elapsed 0h01m15s 
+epoch 1 batch 36 processed 1,152 batch-loss 0.3084 epoch-elapsed 0h01m10s total-elapsed 0h01m16s 
+epoch 1 batch 37 processed 1,184 batch-loss 0.3156 epoch-elapsed 0h01m11s total-elapsed 0h01m17s 
+epoch 1 batch 38 processed 1,216 batch-loss 0.2892 epoch-elapsed 0h01m12s total-elapsed 0h01m17s 
+epoch 1 batch 39 processed 1,248 batch-loss 0.2974 epoch-elapsed 0h01m13s total-elapsed 0h01m18s 
+epoch 1 batch 40 processed 1,280 batch-loss 0.3116 epoch-elapsed 0h01m14s total-elapsed 0h01m19s 
+epoch 1 batch 41 processed 1,312 batch-loss 0.2989 epoch-elapsed 0h01m15s total-elapsed 0h01m20s 
+epoch 1 batch 42 processed 1,344 batch-loss 0.3184 epoch-elapsed 0h01m15s total-elapsed 0h01m21s 
+epoch 1 batch 43 processed 1,376 batch-loss 0.2888 epoch-elapsed 0h01m16s total-elapsed 0h01m22s 
+epoch 1 batch 44 processed 1,408 batch-loss 0.2969 epoch-elapsed 0h01m17s total-elapsed 0h01m23s 
+epoch 1 batch 45 processed 1,440 batch-loss 0.2737 epoch-elapsed 0h01m18s total-elapsed 0h01m24s 
+# Dev Average Loss: 0.350 (MSE) -> 0.591 (RMSD)
+* Removing previous model file model/model_dev=0.3789...
+* Saving new best model to model_dev=0.3498...
+epoch 1 batch 46 processed 1,472 batch-loss 0.2816 epoch-elapsed 0h01m39s total-elapsed 0h01m45s 
+epoch 1 batch 47 processed 1,504 batch-loss 0.2974 epoch-elapsed 0h01m40s total-elapsed 0h01m46s 
+epoch 1 batch 48 processed 1,536 batch-loss 0.3086 epoch-elapsed 0h01m41s total-elapsed 0h01m46s 
+epoch 1 batch 49 processed 1,568 batch-loss 0.2922 epoch-elapsed 0h01m42s total-elapsed 0h01m47s 
+epoch 1 batch 50 processed 1,600 batch-loss 0.2999 epoch-elapsed 0h01m42s total-elapsed 0h01m48s 
+epoch 1 batch 51 processed 1,632 batch-loss 0.2767 epoch-elapsed 0h01m43s total-elapsed 0h01m49s 
+epoch 1 batch 52 processed 1,664 batch-loss 0.2777 epoch-elapsed 0h01m44s total-elapsed 0h01m50s 
+epoch 1 batch 53 processed 1,696 batch-loss 0.2866 epoch-elapsed 0h01m45s total-elapsed 0h01m50s 
+epoch 1 batch 54 processed 1,728 batch-loss 0.2794 epoch-elapsed 0h01m46s total-elapsed 0h01m51s 
+epoch 1 batch 55 processed 1,760 batch-loss 0.2961 epoch-elapsed 0h01m46s total-elapsed 0h01m52s 
+epoch 1 batch 56 processed 1,792 batch-loss 0.2784 epoch-elapsed 0h01m47s total-elapsed 0h01m53s 
+epoch 1 batch 57 processed 1,824 batch-loss 0.2544 epoch-elapsed 0h01m48s total-elapsed 0h01m54s 
+epoch 1 batch 58 processed 1,856 batch-loss 0.2811 epoch-elapsed 0h01m49s total-elapsed 0h01m55s 
+epoch 1 batch 59 processed 1,888 batch-loss 0.2892 epoch-elapsed 0h01m50s total-elapsed 0h01m56s 
+epoch 1 batch 60 processed 1,920 batch-loss 0.2808 epoch-elapsed 0h01m51s total-elapsed 0h01m57s 
+# Dev Average Loss: 0.330 (MSE) -> 0.574 (RMSD)
+* Removing previous model file model/model_dev=0.3498...
+* Saving new best model to model_dev=0.3299...
+epoch 1 batch 61 processed 1,952 batch-loss 0.2604 epoch-elapsed 0h02m12s total-elapsed 0h02m18s 
+epoch 1 batch 62 processed 1,984 batch-loss 0.2661 epoch-elapsed 0h02m13s total-elapsed 0h02m18s 
+epoch 1 batch 63 processed 2,016 batch-loss 0.2682 epoch-elapsed 0h02m14s total-elapsed 0h02m19s 
+epoch 1 batch 64 processed 2,048 batch-loss 0.2854 epoch-elapsed 0h02m15s total-elapsed 0h02m20s 
+epoch 1 batch 65 processed 2,080 batch-loss 0.2715 epoch-elapsed 0h02m15s total-elapsed 0h02m21s 
+epoch 1 batch 66 processed 2,112 batch-loss 0.2816 epoch-elapsed 0h02m16s total-elapsed 0h02m22s 
+epoch 1 batch 67 processed 2,144 batch-loss 0.2739 epoch-elapsed 0h02m17s total-elapsed 0h02m23s 
+epoch 1 batch 68 processed 2,176 batch-loss 0.2796 epoch-elapsed 0h02m18s total-elapsed 0h02m23s 
+epoch 1 batch 69 processed 2,208 batch-loss 0.2918 epoch-elapsed 0h02m19s total-elapsed 0h02m24s 
+epoch 1 batch 70 processed 2,240 batch-loss 0.2430 epoch-elapsed 0h02m19s total-elapsed 0h02m25s 
+epoch 1 batch 71 processed 2,272 batch-loss 0.2676 epoch-elapsed 0h02m20s total-elapsed 0h02m26s 
+epoch 1 batch 72 processed 2,304 batch-loss 0.2786 epoch-elapsed 0h02m21s total-elapsed 0h02m27s 
+epoch 1 batch 73 processed 2,336 batch-loss 0.2832 epoch-elapsed 0h02m22s total-elapsed 0h02m28s 
+epoch 1 batch 74 processed 2,368 batch-loss 0.2781 epoch-elapsed 0h02m23s total-elapsed 0h02m29s 
+epoch 1 batch 75 processed 2,400 batch-loss 0.2945 epoch-elapsed 0h02m24s total-elapsed 0h02m30s 
+# Dev Average Loss: 0.324 (MSE) -> 0.569 (RMSD)
+* Removing previous model file model/model_dev=0.3299...
+* Saving new best model to model_dev=0.3237...
+epoch 1 batch 76 processed 2,432 batch-loss 0.2671 epoch-elapsed 0h02m45s total-elapsed 0h02m51s 
+epoch 1 batch 77 processed 2,464 batch-loss 0.2675 epoch-elapsed 0h02m46s total-elapsed 0h02m51s 
+epoch 1 batch 78 processed 2,496 batch-loss 0.2582 epoch-elapsed 0h02m47s total-elapsed 0h02m52s 
+epoch 1 batch 79 processed 2,528 batch-loss 0.2721 epoch-elapsed 0h02m48s total-elapsed 0h02m53s 
+epoch 1 batch 80 processed 2,560 batch-loss 0.2631 epoch-elapsed 0h02m49s total-elapsed 0h02m54s 
+epoch 1 batch 81 processed 2,592 batch-loss 0.2697 epoch-elapsed 0h02m49s total-elapsed 0h02m55s 
+epoch 1 batch 82 processed 2,624 batch-loss 0.2366 epoch-elapsed 0h02m50s total-elapsed 0h02m56s 
+epoch 1 batch 83 processed 2,656 batch-loss 0.2489 epoch-elapsed 0h02m51s total-elapsed 0h02m56s 
+epoch 1 batch 84 processed 2,688 batch-loss 0.2338 epoch-elapsed 0h02m52s total-elapsed 0h02m57s 
+epoch 1 batch 85 processed 2,720 batch-loss 0.2622 epoch-elapsed 0h02m53s total-elapsed 0h02m58s 
+epoch 1 batch 86 processed 2,752 batch-loss 0.2527 epoch-elapsed 0h02m53s total-elapsed 0h02m59s 
+epoch 1 batch 87 processed 2,784 batch-loss 0.2612 epoch-elapsed 0h02m54s total-elapsed 0h03m00s 
+epoch 1 batch 88 processed 2,816 batch-loss 0.2747 epoch-elapsed 0h02m55s total-elapsed 0h03m01s 
+epoch 1 batch 89 processed 2,848 batch-loss 0.2908 epoch-elapsed 0h02m56s total-elapsed 0h03m02s 
+epoch 1 batch 90 processed 2,880 batch-loss 0.2557 epoch-elapsed 0h02m57s total-elapsed 0h03m02s 
+# Dev Average Loss: 0.305 (MSE) -> 0.553 (RMSD)
+* Removing previous model file model/model_dev=0.3237...
+* Saving new best model to model_dev=0.3053...
+epoch 1 batch 91 processed 2,912 batch-loss 0.2646 epoch-elapsed 0h03m18s total-elapsed 0h03m24s 
+epoch 1 batch 92 processed 2,944 batch-loss 0.2497 epoch-elapsed 0h03m19s total-elapsed 0h03m24s 
+epoch 1 batch 93 processed 2,976 batch-loss 0.2684 epoch-elapsed 0h03m20s total-elapsed 0h03m25s 
+epoch 1 batch 94 processed 3,008 batch-loss 0.2343 epoch-elapsed 0h03m21s total-elapsed 0h03m26s 
+epoch 1 batch 95 processed 3,040 batch-loss 0.2218 epoch-elapsed 0h03m21s total-elapsed 0h03m27s 
+epoch 1 batch 96 processed 3,072 batch-loss 0.2411 epoch-elapsed 0h03m22s total-elapsed 0h03m28s 
+epoch 1 batch 97 processed 3,104 batch-loss 0.2569 epoch-elapsed 0h03m23s total-elapsed 0h03m29s 
+epoch 1 batch 98 processed 3,136 batch-loss 0.2518 epoch-elapsed 0h03m24s total-elapsed 0h03m29s 
+epoch 1 batch 99 processed 3,168 batch-loss 0.2892 epoch-elapsed 0h03m25s total-elapsed 0h03m30s 
+epoch 1 batch 100 processed 3,200 batch-loss 0.2736 epoch-elapsed 0h03m25s total-elapsed 0h03m31s 
+epoch 1 batch 101 processed 3,232 batch-loss 0.2701 epoch-elapsed 0h03m26s total-elapsed 0h03m32s 
+epoch 1 batch 102 processed 3,264 batch-loss 0.2612 epoch-elapsed 0h03m27s total-elapsed 0h03m33s 
+epoch 1 batch 103 processed 3,296 batch-loss 0.2433 epoch-elapsed 0h03m28s total-elapsed 0h03m34s 
+epoch 1 batch 104 processed 3,328 batch-loss 0.2483 epoch-elapsed 0h03m29s total-elapsed 0h03m34s 
+# Dev Average Loss: 0.288 (MSE) -> 0.536 (RMSD)
+* Removing previous model file model/model_dev=0.3053...
+* Saving new best model to model_dev=0.2876...
+epoch 1 batch 105 processed 3,360 batch-loss 0.2544 epoch-elapsed 0h03m50s total-elapsed 0h03m56s 
+epoch 1 batch 106 processed 3,392 batch-loss 0.2345 epoch-elapsed 0h03m51s total-elapsed 0h03m56s 
+epoch 1 batch 107 processed 3,424 batch-loss 0.2648 epoch-elapsed 0h03m52s total-elapsed 0h03m57s 
+epoch 1 batch 108 processed 3,456 batch-loss 0.2565 epoch-elapsed 0h03m53s total-elapsed 0h03m58s 
+epoch 1 batch 109 processed 3,488 batch-loss 0.2427 epoch-elapsed 0h03m53s total-elapsed 0h03m59s 
+epoch 1 batch 110 processed 3,520 batch-loss 0.2604 epoch-elapsed 0h03m54s total-elapsed 0h04m00s 
+epoch 1 batch 111 processed 3,552 batch-loss 0.2445 epoch-elapsed 0h03m55s total-elapsed 0h04m01s 
+epoch 1 batch 112 processed 3,584 batch-loss 0.2939 epoch-elapsed 0h03m56s total-elapsed 0h04m01s 
+epoch 1 batch 113 processed 3,616 batch-loss 0.2648 epoch-elapsed 0h03m57s total-elapsed 0h04m02s 
+epoch 1 batch 114 processed 3,648 batch-loss 0.2573 epoch-elapsed 0h03m57s total-elapsed 0h04m03s 
+epoch 1 batch 115 processed 3,680 batch-loss 0.2192 epoch-elapsed 0h03m58s total-elapsed 0h04m04s 
+epoch 1 batch 116 processed 3,712 batch-loss 0.2597 epoch-elapsed 0h03m59s total-elapsed 0h04m05s 
+epoch 1 batch 117 processed 3,744 batch-loss 0.2563 epoch-elapsed 0h04m00s total-elapsed 0h04m06s 
+epoch 1 batch 118 processed 3,776 batch-loss 0.2414 epoch-elapsed 0h04m01s total-elapsed 0h04m06s 
+epoch 1 batch 119 processed 3,808 batch-loss 0.2467 epoch-elapsed 0h04m02s total-elapsed 0h04m07s 
+# Dev Average Loss: 0.278 (MSE) -> 0.527 (RMSD)
+* Removing previous model file model/model_dev=0.2876...
+* Saving new best model to model_dev=0.2782...
+epoch 1 batch 120 processed 3,840 batch-loss 0.2251 epoch-elapsed 0h04m23s total-elapsed 0h04m28s 
+epoch 1 batch 121 processed 3,872 batch-loss 0.2772 epoch-elapsed 0h04m24s total-elapsed 0h04m29s 
+epoch 1 batch 122 processed 3,904 batch-loss 0.2827 epoch-elapsed 0h04m24s total-elapsed 0h04m30s 
+epoch 1 batch 123 processed 3,936 batch-loss 0.2666 epoch-elapsed 0h04m25s total-elapsed 0h04m31s 
+epoch 1 batch 124 processed 3,968 batch-loss 0.2314 epoch-elapsed 0h04m26s total-elapsed 0h04m32s 
+epoch 1 batch 125 processed 4,000 batch-loss 0.2306 epoch-elapsed 0h04m27s total-elapsed 0h04m32s 
+epoch 1 batch 126 processed 4,032 batch-loss 0.2527 epoch-elapsed 0h04m28s total-elapsed 0h04m33s 
+epoch 1 batch 127 processed 4,064 batch-loss 0.2358 epoch-elapsed 0h04m29s total-elapsed 0h04m34s 
+epoch 1 batch 128 processed 4,096 batch-loss 0.2197 epoch-elapsed 0h04m29s total-elapsed 0h04m35s 
+epoch 1 batch 129 processed 4,128 batch-loss 0.2456 epoch-elapsed 0h04m30s total-elapsed 0h04m36s 
+epoch 1 batch 130 processed 4,160 batch-loss 0.2530 epoch-elapsed 0h04m31s total-elapsed 0h04m37s 
+epoch 1 batch 131 processed 4,192 batch-loss 0.2309 epoch-elapsed 0h04m32s total-elapsed 0h04m37s 
+epoch 1 batch 132 processed 4,224 batch-loss 0.2382 epoch-elapsed 0h04m33s total-elapsed 0h04m38s 
+epoch 1 batch 133 processed 4,256 batch-loss 0.2771 epoch-elapsed 0h04m34s total-elapsed 0h04m39s 
+epoch 1 batch 134 processed 4,288 batch-loss 0.2465 epoch-elapsed 0h04m34s total-elapsed 0h04m40s 
+# Dev Average Loss: 0.274 (MSE) -> 0.523 (RMSD)
+* Removing previous model file model/model_dev=0.2782...
+* Saving new best model to model_dev=0.2739...
+epoch 1 batch 135 processed 4,320 batch-loss 0.2491 epoch-elapsed 0h04m55s total-elapsed 0h05m01s 
+epoch 1 batch 136 processed 4,352 batch-loss 0.2299 epoch-elapsed 0h04m56s total-elapsed 0h05m02s 
+epoch 1 batch 137 processed 4,384 batch-loss 0.2617 epoch-elapsed 0h04m57s total-elapsed 0h05m03s 
+epoch 1 batch 138 processed 4,416 batch-loss 0.2566 epoch-elapsed 0h04m58s total-elapsed 0h05m03s 
+epoch 1 batch 139 processed 4,448 batch-loss 0.2357 epoch-elapsed 0h04m59s total-elapsed 0h05m04s 
+epoch 1 batch 140 processed 4,480 batch-loss 0.2243 epoch-elapsed 0h05m00s total-elapsed 0h05m05s 
+epoch 1 batch 141 processed 4,512 batch-loss 0.2561 epoch-elapsed 0h05m00s total-elapsed 0h05m06s 
+epoch 1 batch 142 processed 4,544 batch-loss 0.2637 epoch-elapsed 0h05m01s total-elapsed 0h05m07s 
+epoch 1 batch 143 processed 4,576 batch-loss 0.2396 epoch-elapsed 0h05m02s total-elapsed 0h05m08s 
+epoch 1 batch 144 processed 4,608 batch-loss 0.2572 epoch-elapsed 0h05m03s total-elapsed 0h05m08s 
+epoch 1 batch 145 processed 4,640 batch-loss 0.2579 epoch-elapsed 0h05m04s total-elapsed 0h05m09s 
+epoch 1 batch 146 processed 4,672 batch-loss 0.2439 epoch-elapsed 0h05m04s total-elapsed 0h05m10s 
+epoch 1 batch 147 processed 4,704 batch-loss 0.2391 epoch-elapsed 0h05m05s total-elapsed 0h05m11s 
+epoch 1 batch 148 processed 4,736 batch-loss 0.2358 epoch-elapsed 0h05m06s total-elapsed 0h05m12s 
+epoch 1 batch 149 processed 4,750 batch-loss 0.2609 epoch-elapsed 0h05m07s total-elapsed 0h05m12s 
+# Dev Average Loss: 0.271 (MSE) -> 0.520 (RMSD)
+* Removing previous model file model/model_dev=0.2739...
+* Saving new best model to model_dev=0.2707...
+# Epoch 2 starting.
+epoch 2 batch 1 processed 4,782 batch-loss 0.2383 epoch-elapsed 0h00m00s total-elapsed 0h05m33s 
+epoch 2 batch 2 processed 4,814 batch-loss 0.2569 epoch-elapsed 0h00m01s total-elapsed 0h05m34s 
+epoch 2 batch 3 processed 4,846 batch-loss 0.2547 epoch-elapsed 0h00m02s total-elapsed 0h05m35s 
+epoch 2 batch 4 processed 4,878 batch-loss 0.2206 epoch-elapsed 0h00m03s total-elapsed 0h05m36s 
+epoch 2 batch 5 processed 4,910 batch-loss 0.2354 epoch-elapsed 0h00m04s total-elapsed 0h05m36s 
+epoch 2 batch 6 processed 4,942 batch-loss 0.2502 epoch-elapsed 0h00m04s total-elapsed 0h05m37s 
+epoch 2 batch 7 processed 4,974 batch-loss 0.2501 epoch-elapsed 0h00m05s total-elapsed 0h05m38s 
+epoch 2 batch 8 processed 5,006 batch-loss 0.2702 epoch-elapsed 0h00m06s total-elapsed 0h05m39s 
+epoch 2 batch 9 processed 5,038 batch-loss 0.2495 epoch-elapsed 0h00m07s total-elapsed 0h05m40s 
+epoch 2 batch 10 processed 5,070 batch-loss 0.2549 epoch-elapsed 0h00m08s total-elapsed 0h05m40s 
+epoch 2 batch 11 processed 5,102 batch-loss 0.2651 epoch-elapsed 0h00m08s total-elapsed 0h05m41s 
+epoch 2 batch 12 processed 5,134 batch-loss 0.2557 epoch-elapsed 0h00m09s total-elapsed 0h05m42s 
+epoch 2 batch 13 processed 5,166 batch-loss 0.2275 epoch-elapsed 0h00m10s total-elapsed 0h05m43s 
+epoch 2 batch 14 processed 5,198 batch-loss 0.2477 epoch-elapsed 0h00m11s total-elapsed 0h05m44s 
+epoch 2 batch 15 processed 5,230 batch-loss 0.2473 epoch-elapsed 0h00m12s total-elapsed 0h05m45s 
+# Dev Average Loss: 0.274 (MSE) -> 0.523 (RMSD)
+epoch 2 batch 16 processed 5,262 batch-loss 0.2588 epoch-elapsed 0h00m33s total-elapsed 0h06m06s 
+epoch 2 batch 17 processed 5,294 batch-loss 0.2652 epoch-elapsed 0h00m34s total-elapsed 0h06m07s 
+epoch 2 batch 18 processed 5,326 batch-loss 0.2382 epoch-elapsed 0h00m35s total-elapsed 0h06m08s 
+epoch 2 batch 19 processed 5,358 batch-loss 0.2262 epoch-elapsed 0h00m36s total-elapsed 0h06m08s 
+epoch 2 batch 20 processed 5,390 batch-loss 0.2555 epoch-elapsed 0h00m36s total-elapsed 0h06m09s 
+epoch 2 batch 21 processed 5,422 batch-loss 0.2298 epoch-elapsed 0h00m37s total-elapsed 0h06m10s 
+epoch 2 batch 22 processed 5,454 batch-loss 0.2525 epoch-elapsed 0h00m38s total-elapsed 0h06m11s 
+epoch 2 batch 23 processed 5,486 batch-loss 0.2395 epoch-elapsed 0h00m39s total-elapsed 0h06m12s 
+epoch 2 batch 24 processed 5,518 batch-loss 0.2443 epoch-elapsed 0h00m40s total-elapsed 0h06m13s 
+epoch 2 batch 25 processed 5,550 batch-loss 0.2542 epoch-elapsed 0h00m41s total-elapsed 0h06m13s 
+epoch 2 batch 26 processed 5,582 batch-loss 0.2425 epoch-elapsed 0h00m41s total-elapsed 0h06m14s 
+epoch 2 batch 27 processed 5,614 batch-loss 0.2277 epoch-elapsed 0h00m42s total-elapsed 0h06m15s 
+epoch 2 batch 28 processed 5,646 batch-loss 0.2420 epoch-elapsed 0h00m43s total-elapsed 0h06m16s 
+epoch 2 batch 29 processed 5,678 batch-loss 0.2396 epoch-elapsed 0h00m44s total-elapsed 0h06m17s 
+epoch 2 batch 30 processed 5,710 batch-loss 0.2299 epoch-elapsed 0h00m45s total-elapsed 0h06m18s 
+# Dev Average Loss: 0.270 (MSE) -> 0.519 (RMSD)
+* Removing previous model file model/model_dev=0.2707...
+* Saving new best model to model_dev=0.2698...
+epoch 2 batch 31 processed 5,742 batch-loss 0.2270 epoch-elapsed 0h01m06s total-elapsed 0h06m39s 
+epoch 2 batch 32 processed 5,774 batch-loss 0.2343 epoch-elapsed 0h01m07s total-elapsed 0h06m40s 
+epoch 2 batch 33 processed 5,806 batch-loss 0.2527 epoch-elapsed 0h01m08s total-elapsed 0h06m41s 
+epoch 2 batch 34 processed 5,838 batch-loss 0.2574 epoch-elapsed 0h01m09s total-elapsed 0h06m42s 
+epoch 2 batch 35 processed 5,870 batch-loss 0.2365 epoch-elapsed 0h01m10s total-elapsed 0h06m42s 
+epoch 2 batch 36 processed 5,902 batch-loss 0.2103 epoch-elapsed 0h01m10s total-elapsed 0h06m43s 
+epoch 2 batch 37 processed 5,934 batch-loss 0.2263 epoch-elapsed 0h01m11s total-elapsed 0h06m44s 
+epoch 2 batch 38 processed 5,966 batch-loss 0.2608 epoch-elapsed 0h01m12s total-elapsed 0h06m45s 
+epoch 2 batch 39 processed 5,998 batch-loss 0.2506 epoch-elapsed 0h01m13s total-elapsed 0h06m46s 
+epoch 2 batch 40 processed 6,030 batch-loss 0.2359 epoch-elapsed 0h01m13s total-elapsed 0h06m46s 
+epoch 2 batch 41 processed 6,062 batch-loss 0.2115 epoch-elapsed 0h01m14s total-elapsed 0h06m47s 
+epoch 2 batch 42 processed 6,094 batch-loss 0.2609 epoch-elapsed 0h01m14s total-elapsed 0h06m47s 
+epoch 2 batch 43 processed 6,126 batch-loss 0.2664 epoch-elapsed 0h01m15s total-elapsed 0h06m48s 
+epoch 2 batch 44 processed 6,158 batch-loss 0.2448 epoch-elapsed 0h01m15s total-elapsed 0h06m48s 
+epoch 2 batch 45 processed 6,190 batch-loss 0.2185 epoch-elapsed 0h01m16s total-elapsed 0h06m49s 
+# Dev Average Loss: 0.268 (MSE) -> 0.517 (RMSD)
+* Removing previous model file model/model_dev=0.2698...
+* Saving new best model to model_dev=0.2677...
+epoch 2 batch 46 processed 6,222 batch-loss 0.2261 epoch-elapsed 0h01m36s total-elapsed 0h07m09s 
+epoch 2 batch 47 processed 6,254 batch-loss 0.2628 epoch-elapsed 0h01m37s total-elapsed 0h07m09s 
+epoch 2 batch 48 processed 6,286 batch-loss 0.2440 epoch-elapsed 0h01m37s total-elapsed 0h07m10s 
+epoch 2 batch 49 processed 6,318 batch-loss 0.2166 epoch-elapsed 0h01m38s total-elapsed 0h07m11s 
+epoch 2 batch 50 processed 6,350 batch-loss 0.2433 epoch-elapsed 0h01m38s total-elapsed 0h07m11s 
+epoch 2 batch 51 processed 6,382 batch-loss 0.2584 epoch-elapsed 0h01m39s total-elapsed 0h07m12s 
+epoch 2 batch 52 processed 6,414 batch-loss 0.2206 epoch-elapsed 0h01m39s total-elapsed 0h07m12s 
+epoch 2 batch 53 processed 6,446 batch-loss 0.2446 epoch-elapsed 0h01m40s total-elapsed 0h07m13s 
+epoch 2 batch 54 processed 6,478 batch-loss 0.2435 epoch-elapsed 0h01m40s total-elapsed 0h07m13s 
+epoch 2 batch 55 processed 6,510 batch-loss 0.2489 epoch-elapsed 0h01m41s total-elapsed 0h07m14s 
+epoch 2 batch 56 processed 6,542 batch-loss 0.2260 epoch-elapsed 0h01m41s total-elapsed 0h07m14s 
+epoch 2 batch 57 processed 6,574 batch-loss 0.2514 epoch-elapsed 0h01m42s total-elapsed 0h07m15s 
+epoch 2 batch 58 processed 6,606 batch-loss 0.2457 epoch-elapsed 0h01m42s total-elapsed 0h07m15s 
+epoch 2 batch 59 processed 6,638 batch-loss 0.1996 epoch-elapsed 0h01m43s total-elapsed 0h07m16s 
+epoch 2 batch 60 processed 6,670 batch-loss 0.2430 epoch-elapsed 0h01m43s total-elapsed 0h07m16s 
+# Dev Average Loss: 0.267 (MSE) -> 0.517 (RMSD)
+* Removing previous model file model/model_dev=0.2677...
+* Saving new best model to model_dev=0.2671...
+epoch 2 batch 61 processed 6,702 batch-loss 0.2431 epoch-elapsed 0h02m02s total-elapsed 0h07m35s 
+epoch 2 batch 62 processed 6,734 batch-loss 0.2371 epoch-elapsed 0h02m02s total-elapsed 0h07m35s 
+epoch 2 batch 63 processed 6,766 batch-loss 0.2455 epoch-elapsed 0h02m03s total-elapsed 0h07m36s 
+epoch 2 batch 64 processed 6,798 batch-loss 0.2690 epoch-elapsed 0h02m03s total-elapsed 0h07m36s 
+epoch 2 batch 65 processed 6,830 batch-loss 0.2395 epoch-elapsed 0h02m04s total-elapsed 0h07m37s 
+epoch 2 batch 66 processed 6,862 batch-loss 0.2183 epoch-elapsed 0h02m04s total-elapsed 0h07m37s 
+epoch 2 batch 67 processed 6,894 batch-loss 0.2298 epoch-elapsed 0h02m05s total-elapsed 0h07m38s 
+epoch 2 batch 68 processed 6,926 batch-loss 0.2419 epoch-elapsed 0h02m05s total-elapsed 0h07m38s 
+epoch 2 batch 69 processed 6,958 batch-loss 0.2677 epoch-elapsed 0h02m06s total-elapsed 0h07m39s 
+epoch 2 batch 70 processed 6,990 batch-loss 0.2491 epoch-elapsed 0h02m06s total-elapsed 0h07m39s 
+epoch 2 batch 71 processed 7,022 batch-loss 0.2273 epoch-elapsed 0h02m07s total-elapsed 0h07m40s 
+epoch 2 batch 72 processed 7,054 batch-loss 0.2306 epoch-elapsed 0h02m07s total-elapsed 0h07m40s 
+epoch 2 batch 73 processed 7,086 batch-loss 0.2634 epoch-elapsed 0h02m08s total-elapsed 0h07m41s 
+epoch 2 batch 74 processed 7,118 batch-loss 0.2429 epoch-elapsed 0h02m08s total-elapsed 0h07m41s 
+epoch 2 batch 75 processed 7,150 batch-loss 0.2525 epoch-elapsed 0h02m09s total-elapsed 0h07m42s 
+# Dev Average Loss: 0.270 (MSE) -> 0.519 (RMSD)
+epoch 2 batch 76 processed 7,182 batch-loss 0.2224 epoch-elapsed 0h02m27s total-elapsed 0h08m00s 
+epoch 2 batch 77 processed 7,214 batch-loss 0.2463 epoch-elapsed 0h02m28s total-elapsed 0h08m00s 
+epoch 2 batch 78 processed 7,246 batch-loss 0.2700 epoch-elapsed 0h02m28s total-elapsed 0h08m01s 
+epoch 2 batch 79 processed 7,278 batch-loss 0.2311 epoch-elapsed 0h02m29s total-elapsed 0h08m02s 
+epoch 2 batch 80 processed 7,310 batch-loss 0.2061 epoch-elapsed 0h02m29s total-elapsed 0h08m02s 
+epoch 2 batch 81 processed 7,342 batch-loss 0.2023 epoch-elapsed 0h02m30s total-elapsed 0h08m03s 
+epoch 2 batch 82 processed 7,374 batch-loss 0.2297 epoch-elapsed 0h02m30s total-elapsed 0h08m03s 
+epoch 2 batch 83 processed 7,406 batch-loss 0.2767 epoch-elapsed 0h02m31s total-elapsed 0h08m03s 
+epoch 2 batch 84 processed 7,438 batch-loss 0.2565 epoch-elapsed 0h02m31s total-elapsed 0h08m04s 
+epoch 2 batch 85 processed 7,470 batch-loss 0.2479 epoch-elapsed 0h02m32s total-elapsed 0h08m04s 
+epoch 2 batch 86 processed 7,502 batch-loss 0.2547 epoch-elapsed 0h02m32s total-elapsed 0h08m05s 
+epoch 2 batch 87 processed 7,534 batch-loss 0.2468 epoch-elapsed 0h02m33s total-elapsed 0h08m05s 
+epoch 2 batch 88 processed 7,566 batch-loss 0.2562 epoch-elapsed 0h02m33s total-elapsed 0h08m06s 
+epoch 2 batch 89 processed 7,598 batch-loss 0.2026 epoch-elapsed 0h02m34s total-elapsed 0h08m06s 
+epoch 2 batch 90 processed 7,630 batch-loss 0.2553 epoch-elapsed 0h02m34s total-elapsed 0h08m07s 
+# Dev Average Loss: 0.264 (MSE) -> 0.514 (RMSD)
+* Removing previous model file model/model_dev=0.2671...
+* Saving new best model to model_dev=0.2645...
+epoch 2 batch 91 processed 7,662 batch-loss 0.2640 epoch-elapsed 0h02m52s total-elapsed 0h08m25s 
+epoch 2 batch 92 processed 7,694 batch-loss 0.2057 epoch-elapsed 0h02m53s total-elapsed 0h08m26s 
+epoch 2 batch 93 processed 7,726 batch-loss 0.2341 epoch-elapsed 0h02m53s total-elapsed 0h08m26s 
+epoch 2 batch 94 processed 7,758 batch-loss 0.2199 epoch-elapsed 0h02m54s total-elapsed 0h08m27s 
+epoch 2 batch 95 processed 7,790 batch-loss 0.2657 epoch-elapsed 0h02m54s total-elapsed 0h08m27s 
+epoch 2 batch 96 processed 7,822 batch-loss 0.2550 epoch-elapsed 0h02m55s total-elapsed 0h08m28s 
+epoch 2 batch 97 processed 7,854 batch-loss 0.2326 epoch-elapsed 0h02m55s total-elapsed 0h08m28s 
+epoch 2 batch 98 processed 7,886 batch-loss 0.2482 epoch-elapsed 0h02m56s total-elapsed 0h08m29s 
+epoch 2 batch 99 processed 7,918 batch-loss 0.2276 epoch-elapsed 0h02m56s total-elapsed 0h08m29s 
+epoch 2 batch 100 processed 7,950 batch-loss 0.2326 epoch-elapsed 0h02m57s total-elapsed 0h08m30s 
+epoch 2 batch 101 processed 7,982 batch-loss 0.2164 epoch-elapsed 0h02m57s total-elapsed 0h08m30s 
+epoch 2 batch 102 processed 8,014 batch-loss 0.2375 epoch-elapsed 0h02m58s total-elapsed 0h08m31s 
+epoch 2 batch 103 processed 8,046 batch-loss 0.2356 epoch-elapsed 0h02m58s total-elapsed 0h08m31s 
+epoch 2 batch 104 processed 8,078 batch-loss 0.2399 epoch-elapsed 0h02m59s total-elapsed 0h08m32s 
+# Dev Average Loss: 0.268 (MSE) -> 0.517 (RMSD)
+epoch 2 batch 105 processed 8,110 batch-loss 0.2284 epoch-elapsed 0h03m17s total-elapsed 0h08m50s 
+epoch 2 batch 106 processed 8,142 batch-loss 0.2755 epoch-elapsed 0h03m18s total-elapsed 0h08m50s 
+epoch 2 batch 107 processed 8,174 batch-loss 0.2277 epoch-elapsed 0h03m18s total-elapsed 0h08m51s 
+epoch 2 batch 108 processed 8,206 batch-loss 0.2315 epoch-elapsed 0h03m19s total-elapsed 0h08m51s 
+epoch 2 batch 109 processed 8,238 batch-loss 0.2192 epoch-elapsed 0h03m19s total-elapsed 0h08m52s 
+epoch 2 batch 110 processed 8,270 batch-loss 0.2386 epoch-elapsed 0h03m20s total-elapsed 0h08m53s 
+epoch 2 batch 111 processed 8,302 batch-loss 0.2282 epoch-elapsed 0h03m20s total-elapsed 0h08m53s 
+epoch 2 batch 112 processed 8,334 batch-loss 0.2656 epoch-elapsed 0h03m21s total-elapsed 0h08m53s 
+epoch 2 batch 113 processed 8,366 batch-loss 0.2423 epoch-elapsed 0h03m21s total-elapsed 0h08m54s 
+epoch 2 batch 114 processed 8,398 batch-loss 0.2772 epoch-elapsed 0h03m22s total-elapsed 0h08m54s 
+epoch 2 batch 115 processed 8,430 batch-loss 0.2315 epoch-elapsed 0h03m22s total-elapsed 0h08m55s 
+epoch 2 batch 116 processed 8,462 batch-loss 0.2356 epoch-elapsed 0h03m23s total-elapsed 0h08m56s 
+epoch 2 batch 117 processed 8,494 batch-loss 0.2469 epoch-elapsed 0h03m23s total-elapsed 0h08m56s 
+epoch 2 batch 118 processed 8,526 batch-loss 0.2440 epoch-elapsed 0h03m24s total-elapsed 0h08m57s 
+epoch 2 batch 119 processed 8,558 batch-loss 0.2593 epoch-elapsed 0h03m24s total-elapsed 0h08m57s 
+# Dev Average Loss: 0.267 (MSE) -> 0.517 (RMSD)
+epoch 2 batch 120 processed 8,590 batch-loss 0.2515 epoch-elapsed 0h03m42s total-elapsed 0h09m15s 
+epoch 2 batch 121 processed 8,622 batch-loss 0.2310 epoch-elapsed 0h03m43s total-elapsed 0h09m16s 
+epoch 2 batch 122 processed 8,654 batch-loss 0.2401 epoch-elapsed 0h03m43s total-elapsed 0h09m16s 
+epoch 2 batch 123 processed 8,686 batch-loss 0.2471 epoch-elapsed 0h03m44s total-elapsed 0h09m17s 
+epoch 2 batch 124 processed 8,718 batch-loss 0.2500 epoch-elapsed 0h03m44s total-elapsed 0h09m17s 
+epoch 2 batch 125 processed 8,750 batch-loss 0.2077 epoch-elapsed 0h03m45s total-elapsed 0h09m18s 
+epoch 2 batch 126 processed 8,782 batch-loss 0.2510 epoch-elapsed 0h03m45s total-elapsed 0h09m18s 
+epoch 2 batch 127 processed 8,814 batch-loss 0.2273 epoch-elapsed 0h03m46s total-elapsed 0h09m19s 
+epoch 2 batch 128 processed 8,846 batch-loss 0.2404 epoch-elapsed 0h03m46s total-elapsed 0h09m19s 
+epoch 2 batch 129 processed 8,878 batch-loss 0.2353 epoch-elapsed 0h03m47s total-elapsed 0h09m20s 
+epoch 2 batch 130 processed 8,910 batch-loss 0.2270 epoch-elapsed 0h03m47s total-elapsed 0h09m20s 
+epoch 2 batch 131 processed 8,942 batch-loss 0.2384 epoch-elapsed 0h03m48s total-elapsed 0h09m21s 
+epoch 2 batch 132 processed 8,974 batch-loss 0.2097 epoch-elapsed 0h03m48s total-elapsed 0h09m21s 
+epoch 2 batch 133 processed 9,006 batch-loss 0.2725 epoch-elapsed 0h03m49s total-elapsed 0h09m22s 
+epoch 2 batch 134 processed 9,038 batch-loss 0.2365 epoch-elapsed 0h03m49s total-elapsed 0h09m22s 
+# Dev Average Loss: 0.268 (MSE) -> 0.518 (RMSD)
+epoch 2 batch 135 processed 9,070 batch-loss 0.2361 epoch-elapsed 0h04m08s total-elapsed 0h09m40s 
+epoch 2 batch 136 processed 9,102 batch-loss 0.2151 epoch-elapsed 0h04m08s total-elapsed 0h09m41s 
+epoch 2 batch 137 processed 9,134 batch-loss 0.2415 epoch-elapsed 0h04m09s total-elapsed 0h09m41s 
+epoch 2 batch 138 processed 9,166 batch-loss 0.2422 epoch-elapsed 0h04m09s total-elapsed 0h09m42s 
+epoch 2 batch 139 processed 9,198 batch-loss 0.2183 epoch-elapsed 0h04m10s total-elapsed 0h09m42s 
+epoch 2 batch 140 processed 9,230 batch-loss 0.2563 epoch-elapsed 0h04m10s total-elapsed 0h09m43s 
+epoch 2 batch 141 processed 9,262 batch-loss 0.2569 epoch-elapsed 0h04m11s total-elapsed 0h09m43s 
+epoch 2 batch 142 processed 9,294 batch-loss 0.2504 epoch-elapsed 0h04m11s total-elapsed 0h09m44s 
+epoch 2 batch 143 processed 9,326 batch-loss 0.2553 epoch-elapsed 0h04m12s total-elapsed 0h09m44s 
+epoch 2 batch 144 processed 9,358 batch-loss 0.2511 epoch-elapsed 0h04m12s total-elapsed 0h09m45s 
+epoch 2 batch 145 processed 9,390 batch-loss 0.2447 epoch-elapsed 0h04m13s total-elapsed 0h09m45s 
+epoch 2 batch 146 processed 9,422 batch-loss 0.2186 epoch-elapsed 0h04m13s total-elapsed 0h09m46s 
+epoch 2 batch 147 processed 9,454 batch-loss 0.2519 epoch-elapsed 0h04m13s total-elapsed 0h09m46s 
+epoch 2 batch 148 processed 9,486 batch-loss 0.2440 epoch-elapsed 0h04m14s total-elapsed 0h09m47s 
+epoch 2 batch 149 processed 9,500 batch-loss 0.2151 epoch-elapsed 0h04m14s total-elapsed 0h09m47s 
+# Dev Average Loss: 0.265 (MSE) -> 0.515 (RMSD)
+# Epoch 3 starting.
+epoch 3 batch 1 processed 9,532 batch-loss 0.2436 epoch-elapsed 0h00m00s total-elapsed 0h10m06s 
+epoch 3 batch 2 processed 9,564 batch-loss 0.2504 epoch-elapsed 0h00m01s total-elapsed 0h10m07s 
+epoch 3 batch 3 processed 9,596 batch-loss 0.2215 epoch-elapsed 0h00m01s total-elapsed 0h10m07s 
+epoch 3 batch 4 processed 9,628 batch-loss 0.2229 epoch-elapsed 0h00m02s total-elapsed 0h10m08s 
+epoch 3 batch 5 processed 9,660 batch-loss 0.2340 epoch-elapsed 0h00m02s total-elapsed 0h10m08s 
+epoch 3 batch 6 processed 9,692 batch-loss 0.2531 epoch-elapsed 0h00m03s total-elapsed 0h10m09s 
+epoch 3 batch 7 processed 9,724 batch-loss 0.2378 epoch-elapsed 0h00m03s total-elapsed 0h10m09s 
+epoch 3 batch 8 processed 9,756 batch-loss 0.2332 epoch-elapsed 0h00m03s total-elapsed 0h10m09s 
+epoch 3 batch 9 processed 9,788 batch-loss 0.2611 epoch-elapsed 0h00m04s total-elapsed 0h10m10s 
+epoch 3 batch 10 processed 9,820 batch-loss 0.2470 epoch-elapsed 0h00m04s total-elapsed 0h10m10s 
+epoch 3 batch 11 processed 9,852 batch-loss 0.2465 epoch-elapsed 0h00m05s total-elapsed 0h10m11s 
+epoch 3 batch 12 processed 9,884 batch-loss 0.2456 epoch-elapsed 0h00m05s total-elapsed 0h10m11s 
+epoch 3 batch 13 processed 9,916 batch-loss 0.2637 epoch-elapsed 0h00m06s total-elapsed 0h10m12s 
+epoch 3 batch 14 processed 9,948 batch-loss 0.2723 epoch-elapsed 0h00m06s total-elapsed 0h10m12s 
+epoch 3 batch 15 processed 9,980 batch-loss 0.2527 epoch-elapsed 0h00m07s total-elapsed 0h10m13s 
+# Dev Average Loss: 0.264 (MSE) -> 0.514 (RMSD)
+* Removing previous model file model/model_dev=0.2645...
+* Saving new best model to model_dev=0.2641...
+epoch 3 batch 16 processed 10,012 batch-loss 0.2472 epoch-elapsed 0h00m26s total-elapsed 0h10m32s 
+epoch 3 batch 17 processed 10,044 batch-loss 0.2448 epoch-elapsed 0h00m26s total-elapsed 0h10m32s 
+epoch 3 batch 18 processed 10,076 batch-loss 0.2530 epoch-elapsed 0h00m27s total-elapsed 0h10m33s 
+epoch 3 batch 19 processed 10,108 batch-loss 0.2407 epoch-elapsed 0h00m27s total-elapsed 0h10m33s 
+epoch 3 batch 20 processed 10,140 batch-loss 0.2305 epoch-elapsed 0h00m28s total-elapsed 0h10m34s 
+epoch 3 batch 21 processed 10,172 batch-loss 0.2215 epoch-elapsed 0h00m28s total-elapsed 0h10m34s 
+epoch 3 batch 22 processed 10,204 batch-loss 0.2355 epoch-elapsed 0h00m29s total-elapsed 0h10m35s 
+epoch 3 batch 23 processed 10,236 batch-loss 0.2499 epoch-elapsed 0h00m29s total-elapsed 0h10m35s 
+epoch 3 batch 24 processed 10,268 batch-loss 0.2519 epoch-elapsed 0h00m30s total-elapsed 0h10m36s 
+epoch 3 batch 25 processed 10,300 batch-loss 0.2328 epoch-elapsed 0h00m30s total-elapsed 0h10m36s 
+epoch 3 batch 26 processed 10,332 batch-loss 0.2432 epoch-elapsed 0h00m31s total-elapsed 0h10m37s 
+epoch 3 batch 27 processed 10,364 batch-loss 0.2510 epoch-elapsed 0h00m31s total-elapsed 0h10m37s 
+epoch 3 batch 28 processed 10,396 batch-loss 0.2361 epoch-elapsed 0h00m32s total-elapsed 0h10m38s 
+epoch 3 batch 29 processed 10,428 batch-loss 0.2358 epoch-elapsed 0h00m32s total-elapsed 0h10m38s 
+epoch 3 batch 30 processed 10,460 batch-loss 0.2437 epoch-elapsed 0h00m33s total-elapsed 0h10m39s 
+# Dev Average Loss: 0.270 (MSE) -> 0.520 (RMSD)
+epoch 3 batch 31 processed 10,492 batch-loss 0.2196 epoch-elapsed 0h00m51s total-elapsed 0h10m57s 
+epoch 3 batch 32 processed 10,524 batch-loss 0.2135 epoch-elapsed 0h00m52s total-elapsed 0h10m58s 
+epoch 3 batch 33 processed 10,556 batch-loss 0.2480 epoch-elapsed 0h00m52s total-elapsed 0h10m58s 
+epoch 3 batch 34 processed 10,588 batch-loss 0.2375 epoch-elapsed 0h00m53s total-elapsed 0h10m59s 
+epoch 3 batch 35 processed 10,620 batch-loss 0.2309 epoch-elapsed 0h00m53s total-elapsed 0h10m59s 
+epoch 3 batch 36 processed 10,652 batch-loss 0.2445 epoch-elapsed 0h00m54s total-elapsed 0h11m00s 
+epoch 3 batch 37 processed 10,684 batch-loss 0.2319 epoch-elapsed 0h00m54s total-elapsed 0h11m00s 
+epoch 3 batch 38 processed 10,716 batch-loss 0.2192 epoch-elapsed 0h00m55s total-elapsed 0h11m01s 
+epoch 3 batch 39 processed 10,748 batch-loss 0.2508 epoch-elapsed 0h00m55s total-elapsed 0h11m01s 
+epoch 3 batch 40 processed 10,780 batch-loss 0.2417 epoch-elapsed 0h00m56s total-elapsed 0h11m02s 
+epoch 3 batch 41 processed 10,812 batch-loss 0.2612 epoch-elapsed 0h00m56s total-elapsed 0h11m02s 
+epoch 3 batch 42 processed 10,844 batch-loss 0.2358 epoch-elapsed 0h00m57s total-elapsed 0h11m03s 
+epoch 3 batch 43 processed 10,876 batch-loss 0.2478 epoch-elapsed 0h00m57s total-elapsed 0h11m03s 
+epoch 3 batch 44 processed 10,908 batch-loss 0.2311 epoch-elapsed 0h00m58s total-elapsed 0h11m04s 
+epoch 3 batch 45 processed 10,940 batch-loss 0.2182 epoch-elapsed 0h00m58s total-elapsed 0h11m04s 
+# Dev Average Loss: 0.265 (MSE) -> 0.515 (RMSD)
+epoch 3 batch 46 processed 10,972 batch-loss 0.2556 epoch-elapsed 0h01m17s total-elapsed 0h11m23s 
+epoch 3 batch 47 processed 11,004 batch-loss 0.2409 epoch-elapsed 0h01m17s total-elapsed 0h11m23s 
+epoch 3 batch 48 processed 11,036 batch-loss 0.2643 epoch-elapsed 0h01m18s total-elapsed 0h11m24s 
+epoch 3 batch 49 processed 11,068 batch-loss 0.2321 epoch-elapsed 0h01m18s total-elapsed 0h11m24s 
+epoch 3 batch 50 processed 11,100 batch-loss 0.2314 epoch-elapsed 0h01m19s total-elapsed 0h11m25s 
+epoch 3 batch 51 processed 11,132 batch-loss 0.2517 epoch-elapsed 0h01m19s total-elapsed 0h11m25s 
+epoch 3 batch 52 processed 11,164 batch-loss 0.2343 epoch-elapsed 0h01m20s total-elapsed 0h11m26s 
+epoch 3 batch 53 processed 11,196 batch-loss 0.2407 epoch-elapsed 0h01m20s total-elapsed 0h11m26s 
+epoch 3 batch 54 processed 11,228 batch-loss 0.2337 epoch-elapsed 0h01m21s total-elapsed 0h11m27s 
+epoch 3 batch 55 processed 11,260 batch-loss 0.2443 epoch-elapsed 0h01m21s total-elapsed 0h11m27s 
+epoch 3 batch 56 processed 11,292 batch-loss 0.2288 epoch-elapsed 0h01m22s total-elapsed 0h11m28s 
+epoch 3 batch 57 processed 11,324 batch-loss 0.2368 epoch-elapsed 0h01m22s total-elapsed 0h11m28s 
+epoch 3 batch 58 processed 11,356 batch-loss 0.2140 epoch-elapsed 0h01m23s total-elapsed 0h11m29s 
+epoch 3 batch 59 processed 11,388 batch-loss 0.2375 epoch-elapsed 0h01m23s total-elapsed 0h11m29s 
+epoch 3 batch 60 processed 11,420 batch-loss 0.2357 epoch-elapsed 0h01m24s total-elapsed 0h11m30s 
+# Dev Average Loss: 0.263 (MSE) -> 0.513 (RMSD)
+* Removing previous model file model/model_dev=0.2641...
+* Saving new best model to model_dev=0.2630...
+epoch 3 batch 61 processed 11,452 batch-loss 0.2381 epoch-elapsed 0h01m42s total-elapsed 0h11m48s 
+epoch 3 batch 62 processed 11,484 batch-loss 0.2168 epoch-elapsed 0h01m43s total-elapsed 0h11m49s 
+epoch 3 batch 63 processed 11,516 batch-loss 0.2360 epoch-elapsed 0h01m43s total-elapsed 0h11m49s 
+epoch 3 batch 64 processed 11,548 batch-loss 0.2517 epoch-elapsed 0h01m44s total-elapsed 0h11m50s 
+epoch 3 batch 65 processed 11,580 batch-loss 0.2424 epoch-elapsed 0h01m44s total-elapsed 0h11m50s 
+epoch 3 batch 66 processed 11,612 batch-loss 0.2353 epoch-elapsed 0h01m45s total-elapsed 0h11m51s 
+epoch 3 batch 67 processed 11,644 batch-loss 0.2273 epoch-elapsed 0h01m45s total-elapsed 0h11m51s 
+epoch 3 batch 68 processed 11,676 batch-loss 0.2372 epoch-elapsed 0h01m46s total-elapsed 0h11m52s 
+epoch 3 batch 69 processed 11,708 batch-loss 0.2427 epoch-elapsed 0h01m46s total-elapsed 0h11m52s 
+epoch 3 batch 70 processed 11,740 batch-loss 0.2491 epoch-elapsed 0h01m47s total-elapsed 0h11m53s 
+epoch 3 batch 71 processed 11,772 batch-loss 0.2464 epoch-elapsed 0h01m47s total-elapsed 0h11m53s 
+epoch 3 batch 72 processed 11,804 batch-loss 0.2540 epoch-elapsed 0h01m48s total-elapsed 0h11m54s 
+epoch 3 batch 73 processed 11,836 batch-loss 0.2523 epoch-elapsed 0h01m48s total-elapsed 0h11m54s 
+epoch 3 batch 74 processed 11,868 batch-loss 0.2537 epoch-elapsed 0h01m49s total-elapsed 0h11m55s 
+epoch 3 batch 75 processed 11,900 batch-loss 0.2250 epoch-elapsed 0h01m49s total-elapsed 0h11m55s 
+# Dev Average Loss: 0.264 (MSE) -> 0.514 (RMSD)
+epoch 3 batch 76 processed 11,932 batch-loss 0.2446 epoch-elapsed 0h02m08s total-elapsed 0h12m14s 
+epoch 3 batch 77 processed 11,964 batch-loss 0.2283 epoch-elapsed 0h02m08s total-elapsed 0h12m14s 
+epoch 3 batch 78 processed 11,996 batch-loss 0.2386 epoch-elapsed 0h02m09s total-elapsed 0h12m15s 
+epoch 3 batch 79 processed 12,028 batch-loss 0.2279 epoch-elapsed 0h02m10s total-elapsed 0h12m16s 
+epoch 3 batch 80 processed 12,060 batch-loss 0.2339 epoch-elapsed 0h02m10s total-elapsed 0h12m16s 
+epoch 3 batch 81 processed 12,092 batch-loss 0.2091 epoch-elapsed 0h02m11s total-elapsed 0h12m17s 
+epoch 3 batch 82 processed 12,124 batch-loss 0.2138 epoch-elapsed 0h02m11s total-elapsed 0h12m17s 
+epoch 3 batch 83 processed 12,156 batch-loss 0.2333 epoch-elapsed 0h02m12s total-elapsed 0h12m18s 
+epoch 3 batch 84 processed 12,188 batch-loss 0.2426 epoch-elapsed 0h02m12s total-elapsed 0h12m18s 
+epoch 3 batch 85 processed 12,220 batch-loss 0.2249 epoch-elapsed 0h02m12s total-elapsed 0h12m18s 
+epoch 3 batch 86 processed 12,252 batch-loss 0.2678 epoch-elapsed 0h02m13s total-elapsed 0h12m19s 
+epoch 3 batch 87 processed 12,284 batch-loss 0.2443 epoch-elapsed 0h02m13s total-elapsed 0h12m19s 
+epoch 3 batch 88 processed 12,316 batch-loss 0.2410 epoch-elapsed 0h02m14s total-elapsed 0h12m20s 
+epoch 3 batch 89 processed 12,348 batch-loss 0.2166 epoch-elapsed 0h02m14s total-elapsed 0h12m20s 
+epoch 3 batch 90 processed 12,380 batch-loss 0.2133 epoch-elapsed 0h02m15s total-elapsed 0h12m21s 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                # Dev Average Loss: 0.264 (MSE) -> 0.514 (RMSD)
+epoch 7 batch 91 processed 31,412 batch-loss 0.2314 epoch-elapsed 0h02m32s total-elapsed 0h27m31s 
+epoch 7 batch 92 processed 31,444 batch-loss 0.2276 epoch-elapsed 0h02m33s total-elapsed 0h27m32s 
+epoch 7 batch 93 processed 31,476 batch-loss 0.2145 epoch-elapsed 0h02m34s total-elapsed 0h27m32s 
+epoch 7 batch 94 processed 31,508 batch-loss 0.2595 epoch-elapsed 0h02m35s total-elapsed 0h27m33s 
+epoch 7 batch 95 processed 31,540 batch-loss 0.2284 epoch-elapsed 0h02m36s total-elapsed 0h27m34s 
+epoch 7 batch 96 processed 31,572 batch-loss 0.2393 epoch-elapsed 0h02m37s total-elapsed 0h27m35s 
+epoch 7 batch 97 processed 31,604 batch-loss 0.2729 epoch-elapsed 0h02m38s total-elapsed 0h27m36s 
+epoch 7 batch 98 processed 31,636 batch-loss 0.2380 epoch-elapsed 0h02m39s total-elapsed 0h27m37s 
+epoch 7 batch 99 processed 31,668 batch-loss 0.2363 epoch-elapsed 0h02m39s total-elapsed 0h27m37s 
+epoch 7 batch 100 processed 31,700 batch-loss 0.2298 epoch-elapsed 0h02m40s total-elapsed 0h27m38s 
+epoch 7 batch 101 processed 31,732 batch-loss 0.2110 epoch-elapsed 0h02m41s total-elapsed 0h27m39s 
+epoch 7 batch 102 processed 31,764 batch-loss 0.2708 epoch-elapsed 0h02m42s total-elapsed 0h27m40s 
+epoch 7 batch 103 processed 31,796 batch-loss 0.2218 epoch-elapsed 0h02m43s total-elapsed 0h27m41s 
+epoch 7 batch 104 processed 31,828 batch-loss 0.2145 epoch-elapsed 0h02m44s total-elapsed 0h27m42s 
+# Dev Average Loss: 0.261 (MSE) -> 0.511 (RMSD)
+epoch 7 batch 105 processed 31,860 batch-loss 0.2330 epoch-elapsed 0h03m05s total-elapsed 0h28m03s 
+epoch 7 batch 106 processed 31,892 batch-loss 0.1898 epoch-elapsed 0h03m05s total-elapsed 0h28m04s 
+epoch 7 batch 107 processed 31,924 batch-loss 0.2549 epoch-elapsed 0h03m06s total-elapsed 0h28m04s 
+epoch 7 batch 108 processed 31,956 batch-loss 0.2341 epoch-elapsed 0h03m07s total-elapsed 0h28m05s 
+epoch 7 batch 109 processed 31,988 batch-loss 0.2142 epoch-elapsed 0h03m08s total-elapsed 0h28m06s 
+epoch 7 batch 110 processed 32,020 batch-loss 0.2516 epoch-elapsed 0h03m09s total-elapsed 0h28m07s 
+epoch 7 batch 111 processed 32,052 batch-loss 0.2356 epoch-elapsed 0h03m10s total-elapsed 0h28m08s 
+epoch 7 batch 112 processed 32,084 batch-loss 0.2402 epoch-elapsed 0h03m11s total-elapsed 0h28m09s 
+epoch 7 batch 113 processed 32,116 batch-loss 0.2359 epoch-elapsed 0h03m12s total-elapsed 0h28m10s 
+epoch 7 batch 114 processed 32,148 batch-loss 0.2201 epoch-elapsed 0h03m12s total-elapsed 0h28m10s 
+epoch 7 batch 115 processed 32,180 batch-loss 0.2442 epoch-elapsed 0h03m13s total-elapsed 0h28m11s 
+epoch 7 batch 116 processed 32,212 batch-loss 0.2182 epoch-elapsed 0h03m14s total-elapsed 0h28m12s 
+epoch 7 batch 117 processed 32,244 batch-loss 0.2502 epoch-elapsed 0h03m15s total-elapsed 0h28m13s 
+epoch 7 batch 118 processed 32,276 batch-loss 0.2373 epoch-elapsed 0h03m16s total-elapsed 0h28m14s 
+epoch 7 batch 119 processed 32,308 batch-loss 0.2393 epoch-elapsed 0h03m16s total-elapsed 0h28m14s 
+# Dev Average Loss: 0.263 (MSE) -> 0.512 (RMSD)
+epoch 7 batch 120 processed 32,340 batch-loss 0.2416 epoch-elapsed 0h03m37s total-elapsed 0h28m35s 
+epoch 7 batch 121 processed 32,372 batch-loss 0.2539 epoch-elapsed 0h03m38s total-elapsed 0h28m36s 
+epoch 7 batch 122 processed 32,404 batch-loss 0.2166 epoch-elapsed 0h03m39s total-elapsed 0h28m37s 
+epoch 7 batch 123 processed 32,436 batch-loss 0.2181 epoch-elapsed 0h03m40s total-elapsed 0h28m38s 
+epoch 7 batch 124 processed 32,468 batch-loss 0.2501 epoch-elapsed 0h03m41s total-elapsed 0h28m39s 
+epoch 7 batch 125 processed 32,500 batch-loss 0.2509 epoch-elapsed 0h03m42s total-elapsed 0h28m40s 
+epoch 7 batch 126 processed 32,532 batch-loss 0.2120 epoch-elapsed 0h03m43s total-elapsed 0h28m41s 
+epoch 7 batch 127 processed 32,564 batch-loss 0.2349 epoch-elapsed 0h03m44s total-elapsed 0h28m42s 
+epoch 7 batch 128 processed 32,596 batch-loss 0.2209 epoch-elapsed 0h03m45s total-elapsed 0h28m43s 
+epoch 7 batch 129 processed 32,628 batch-loss 0.2491 epoch-elapsed 0h03m45s total-elapsed 0h28m43s 
+epoch 7 batch 130 processed 32,660 batch-loss 0.2066 epoch-elapsed 0h03m46s total-elapsed 0h28m44s 
+epoch 7 batch 131 processed 32,692 batch-loss 0.2540 epoch-elapsed 0h03m47s total-elapsed 0h28m45s 
+epoch 7 batch 132 processed 32,724 batch-loss 0.2225 epoch-elapsed 0h03m48s total-elapsed 0h28m46s 
+epoch 7 batch 133 processed 32,756 batch-loss 0.2317 epoch-elapsed 0h03m49s total-elapsed 0h28m47s 
+epoch 7 batch 134 processed 32,788 batch-loss 0.2363 epoch-elapsed 0h03m49s total-elapsed 0h28m48s 
+# Dev Average Loss: 0.260 (MSE) -> 0.510 (RMSD)
+epoch 7 batch 135 processed 32,820 batch-loss 0.1916 epoch-elapsed 0h04m10s total-elapsed 0h29m08s 
+epoch 7 batch 136 processed 32,852 batch-loss 0.2799 epoch-elapsed 0h04m11s total-elapsed 0h29m09s 
+epoch 7 batch 137 processed 32,884 batch-loss 0.2376 epoch-elapsed 0h04m12s total-elapsed 0h29m10s 
+epoch 7 batch 138 processed 32,916 batch-loss 0.2188 epoch-elapsed 0h04m13s total-elapsed 0h29m11s 
+epoch 7 batch 139 processed 32,948 batch-loss 0.2412 epoch-elapsed 0h04m14s total-elapsed 0h29m12s 
+epoch 7 batch 140 processed 32,980 batch-loss 0.2198 epoch-elapsed 0h04m15s total-elapsed 0h29m13s 
+epoch 7 batch 141 processed 33,012 batch-loss 0.2460 epoch-elapsed 0h04m16s total-elapsed 0h29m14s 
+epoch 7 batch 142 processed 33,044 batch-loss 0.2293 epoch-elapsed 0h04m17s total-elapsed 0h29m15s 
+epoch 7 batch 143 processed 33,076 batch-loss 0.2156 epoch-elapsed 0h04m17s total-elapsed 0h29m15s 
+epoch 7 batch 144 processed 33,108 batch-loss 0.2187 epoch-elapsed 0h04m18s total-elapsed 0h29m16s 
+epoch 7 batch 145 processed 33,140 batch-loss 0.2521 epoch-elapsed 0h04m19s total-elapsed 0h29m17s 
+epoch 7 batch 146 processed 33,172 batch-loss 0.2684 epoch-elapsed 0h04m20s total-elapsed 0h29m18s 
+epoch 7 batch 147 processed 33,204 batch-loss 0.2213 epoch-elapsed 0h04m21s total-elapsed 0h29m19s 
+epoch 7 batch 148 processed 33,236 batch-loss 0.2386 epoch-elapsed 0h04m21s total-elapsed 0h29m20s 
+epoch 7 batch 149 processed 33,250 batch-loss 0.2801 epoch-elapsed 0h04m22s total-elapsed 0h29m20s 
+# Dev Average Loss: 0.265 (MSE) -> 0.514 (RMSD)
+# Epoch 8 starting.
+epoch 8 batch 1 processed 33,282 batch-loss 0.2531 epoch-elapsed 0h00m01s total-elapsed 0h29m41s 
+epoch 8 batch 2 processed 33,314 batch-loss 0.2709 epoch-elapsed 0h00m01s total-elapsed 0h29m42s 
+epoch 8 batch 3 processed 33,346 batch-loss 0.2390 epoch-elapsed 0h00m02s total-elapsed 0h29m43s 
+epoch 8 batch 4 processed 33,378 batch-loss 0.2235 epoch-elapsed 0h00m03s total-elapsed 0h29m44s 
+epoch 8 batch 5 processed 33,410 batch-loss 0.2402 epoch-elapsed 0h00m04s total-elapsed 0h29m45s 
+epoch 8 batch 6 processed 33,442 batch-loss 0.2244 epoch-elapsed 0h00m05s total-elapsed 0h29m46s 
+epoch 8 batch 7 processed 33,474 batch-loss 0.2436 epoch-elapsed 0h00m06s total-elapsed 0h29m47s 
+epoch 8 batch 8 processed 33,506 batch-loss 0.2633 epoch-elapsed 0h00m07s total-elapsed 0h29m47s 
+epoch 8 batch 9 processed 33,538 batch-loss 0.2328 epoch-elapsed 0h00m07s total-elapsed 0h29m48s 
+epoch 8 batch 10 processed 33,570 batch-loss 0.2274 epoch-elapsed 0h00m08s total-elapsed 0h29m49s 
+epoch 8 batch 11 processed 33,602 batch-loss 0.2278 epoch-elapsed 0h00m09s total-elapsed 0h29m50s 
+epoch 8 batch 12 processed 33,634 batch-loss 0.2239 epoch-elapsed 0h00m10s total-elapsed 0h29m51s 
+epoch 8 batch 13 processed 33,666 batch-loss 0.2477 epoch-elapsed 0h00m11s total-elapsed 0h29m51s 
+epoch 8 batch 14 processed 33,698 batch-loss 0.2339 epoch-elapsed 0h00m11s total-elapsed 0h29m52s 
+epoch 8 batch 15 processed 33,730 batch-loss 0.2481 epoch-elapsed 0h00m12s total-elapsed 0h29m53s 
+# Dev Average Loss: 0.263 (MSE) -> 0.513 (RMSD)
+epoch 8 batch 16 processed 33,762 batch-loss 0.2453 epoch-elapsed 0h00m33s total-elapsed 0h30m14s 
+epoch 8 batch 17 processed 33,794 batch-loss 0.2487 epoch-elapsed 0h00m34s total-elapsed 0h30m15s 
+epoch 8 batch 18 processed 33,826 batch-loss 0.2205 epoch-elapsed 0h00m35s total-elapsed 0h30m16s 
+epoch 8 batch 19 processed 33,858 batch-loss 0.2332 epoch-elapsed 0h00m36s total-elapsed 0h30m17s 
+epoch 8 batch 20 processed 33,890 batch-loss 0.2205 epoch-elapsed 0h00m37s total-elapsed 0h30m18s 
+epoch 8 batch 21 processed 33,922 batch-loss 0.2580 epoch-elapsed 0h00m38s total-elapsed 0h30m19s 
+epoch 8 batch 22 processed 33,954 batch-loss 0.2441 epoch-elapsed 0h00m39s total-elapsed 0h30m19s 
+epoch 8 batch 23 processed 33,986 batch-loss 0.2703 epoch-elapsed 0h00m39s total-elapsed 0h30m20s 
+epoch 8 batch 24 processed 34,018 batch-loss 0.2261 epoch-elapsed 0h00m40s total-elapsed 0h30m21s 
+epoch 8 batch 25 processed 34,050 batch-loss 0.2109 epoch-elapsed 0h00m41s total-elapsed 0h30m22s 
+epoch 8 batch 26 processed 34,082 batch-loss 0.1982 epoch-elapsed 0h00m42s total-elapsed 0h30m23s 
+epoch 8 batch 27 processed 34,114 batch-loss 0.2298 epoch-elapsed 0h00m43s total-elapsed 0h30m24s 
+epoch 8 batch 28 processed 34,146 batch-loss 0.2414 epoch-elapsed 0h00m44s total-elapsed 0h30m24s 
+epoch 8 batch 29 processed 34,178 batch-loss 0.2378 epoch-elapsed 0h00m44s total-elapsed 0h30m25s 
+epoch 8 batch 30 processed 34,210 batch-loss 0.2332 epoch-elapsed 0h00m45s total-elapsed 0h30m26s 
+# Dev Average Loss: 0.260 (MSE) -> 0.509 (RMSD)
+epoch 8 batch 31 processed 34,242 batch-loss 0.2206 epoch-elapsed 0h01m06s total-elapsed 0h30m47s 
+epoch 8 batch 32 processed 34,274 batch-loss 0.2360 epoch-elapsed 0h01m07s total-elapsed 0h30m48s 
+epoch 8 batch 33 processed 34,306 batch-loss 0.2610 epoch-elapsed 0h01m08s total-elapsed 0h30m49s 
+epoch 8 batch 34 processed 34,338 batch-loss 0.2326 epoch-elapsed 0h01m09s total-elapsed 0h30m50s 
+epoch 8 batch 35 processed 34,370 batch-loss 0.2496 epoch-elapsed 0h01m10s total-elapsed 0h30m51s 
+epoch 8 batch 36 processed 34,402 batch-loss 0.2513 epoch-elapsed 0h01m11s total-elapsed 0h30m51s 
+epoch 8 batch 37 processed 34,434 batch-loss 0.2500 epoch-elapsed 0h01m11s total-elapsed 0h30m52s 
+epoch 8 batch 38 processed 34,466 batch-loss 0.2206 epoch-elapsed 0h01m12s total-elapsed 0h30m53s 
+epoch 8 batch 39 processed 34,498 batch-loss 0.2239 epoch-elapsed 0h01m13s total-elapsed 0h30m54s 
+epoch 8 batch 40 processed 34,530 batch-loss 0.2157 epoch-elapsed 0h01m14s total-elapsed 0h30m55s 
+epoch 8 batch 41 processed 34,562 batch-loss 0.2423 epoch-elapsed 0h01m15s total-elapsed 0h30m55s 
+epoch 8 batch 42 processed 34,594 batch-loss 0.2393 epoch-elapsed 0h01m16s total-elapsed 0h30m56s 
+epoch 8 batch 43 processed 34,626 batch-loss 0.2393 epoch-elapsed 0h01m16s total-elapsed 0h30m57s 
+epoch 8 batch 44 processed 34,658 batch-loss 0.2261 epoch-elapsed 0h01m17s total-elapsed 0h30m58s 
+epoch 8 batch 45 processed 34,690 batch-loss 0.2236 epoch-elapsed 0h01m18s total-elapsed 0h30m59s 
+# Dev Average Loss: 0.265 (MSE) -> 0.515 (RMSD)
+epoch 8 batch 46 processed 34,722 batch-loss 0.2309 epoch-elapsed 0h01m39s total-elapsed 0h31m20s 
+epoch 8 batch 47 processed 34,754 batch-loss 0.2151 epoch-elapsed 0h01m40s total-elapsed 0h31m21s 
+epoch 8 batch 48 processed 34,786 batch-loss 0.2276 epoch-elapsed 0h01m41s total-elapsed 0h31m22s 
+epoch 8 batch 49 processed 34,818 batch-loss 0.2273 epoch-elapsed 0h01m42s total-elapsed 0h31m23s 
+epoch 8 batch 50 processed 34,850 batch-loss 0.2160 epoch-elapsed 0h01m43s total-elapsed 0h31m23s 
+epoch 8 batch 51 processed 34,882 batch-loss 0.2233 epoch-elapsed 0h01m44s total-elapsed 0h31m24s 
+epoch 8 batch 52 processed 34,914 batch-loss 0.2148 epoch-elapsed 0h01m44s total-elapsed 0h31m25s 
+epoch 8 batch 53 processed 34,946 batch-loss 0.2078 epoch-elapsed 0h01m45s total-elapsed 0h31m26s 
+epoch 8 batch 54 processed 34,978 batch-loss 0.2274 epoch-elapsed 0h01m46s total-elapsed 0h31m27s 
+epoch 8 batch 55 processed 35,010 batch-loss 0.2403 epoch-elapsed 0h01m47s total-elapsed 0h31m28s 
+epoch 8 batch 56 processed 35,042 batch-loss 0.2331 epoch-elapsed 0h01m48s total-elapsed 0h31m28s 
+epoch 8 batch 57 processed 35,074 batch-loss 0.2492 epoch-elapsed 0h01m48s total-elapsed 0h31m29s 
+epoch 8 batch 58 processed 35,106 batch-loss 0.1962 epoch-elapsed 0h01m49s total-elapsed 0h31m30s 
+epoch 8 batch 59 processed 35,138 batch-loss 0.2412 epoch-elapsed 0h01m50s total-elapsed 0h31m31s 
+epoch 8 batch 60 processed 35,170 batch-loss 0.2376 epoch-elapsed 0h01m51s total-elapsed 0h31m32s 
+# Dev Average Loss: 0.259 (MSE) -> 0.509 (RMSD)
+epoch 8 batch 61 processed 35,202 batch-loss 0.2582 epoch-elapsed 0h02m12s total-elapsed 0h31m53s 
+epoch 8 batch 62 processed 35,234 batch-loss 0.2451 epoch-elapsed 0h02m13s total-elapsed 0h31m53s 
+epoch 8 batch 63 processed 35,266 batch-loss 0.2403 epoch-elapsed 0h02m14s total-elapsed 0h31m54s 
+epoch 8 batch 64 processed 35,298 batch-loss 0.2304 epoch-elapsed 0h02m15s total-elapsed 0h31m55s 
+epoch 8 batch 65 processed 35,330 batch-loss 0.2480 epoch-elapsed 0h02m15s total-elapsed 0h31m56s 
+epoch 8 batch 66 processed 35,362 batch-loss 0.2258 epoch-elapsed 0h02m16s total-elapsed 0h31m57s 
+epoch 8 batch 67 processed 35,394 batch-loss 0.2411 epoch-elapsed 0h02m17s total-elapsed 0h31m58s 
+epoch 8 batch 68 processed 35,426 batch-loss 0.2257 epoch-elapsed 0h02m18s total-elapsed 0h31m59s 
+epoch 8 batch 69 processed 35,458 batch-loss 0.2523 epoch-elapsed 0h02m19s total-elapsed 0h32m00s 
+epoch 8 batch 70 processed 35,490 batch-loss 0.2469 epoch-elapsed 0h02m20s total-elapsed 0h32m00s 
+epoch 8 batch 71 processed 35,522 batch-loss 0.2481 epoch-elapsed 0h02m20s total-elapsed 0h32m01s 
+epoch 8 batch 72 processed 35,554 batch-loss 0.2570 epoch-elapsed 0h02m21s total-elapsed 0h32m02s 
+epoch 8 batch 73 processed 35,586 batch-loss 0.2421 epoch-elapsed 0h02m22s total-elapsed 0h32m03s 
+epoch 8 batch 74 processed 35,618 batch-loss 0.2110 epoch-elapsed 0h02m23s total-elapsed 0h32m04s 
+epoch 8 batch 75 processed 35,650 batch-loss 0.2266 epoch-elapsed 0h02m24s total-elapsed 0h32m04s 
+# Dev Average Loss: 0.255 (MSE) -> 0.505 (RMSD)
+* Removing previous model file model/model_dev=0.2580...
+* Saving new best model to model_dev=0.2552...
+epoch 8 batch 76 processed 35,682 batch-loss 0.2305 epoch-elapsed 0h02m45s total-elapsed 0h32m26s 
+epoch 8 batch 77 processed 35,714 batch-loss 0.2220 epoch-elapsed 0h02m46s total-elapsed 0h32m27s 
+epoch 8 batch 78 processed 35,746 batch-loss 0.2481 epoch-elapsed 0h02m47s total-elapsed 0h32m28s 
+epoch 8 batch 79 processed 35,778 batch-loss 0.2227 epoch-elapsed 0h02m48s total-elapsed 0h32m28s 
+epoch 8 batch 80 processed 35,810 batch-loss 0.2280 epoch-elapsed 0h02m49s total-elapsed 0h32m29s 
+epoch 8 batch 81 processed 35,842 batch-loss 0.2221 epoch-elapsed 0h02m49s total-elapsed 0h32m30s 
+epoch 8 batch 82 processed 35,874 batch-loss 0.2208 epoch-elapsed 0h02m50s total-elapsed 0h32m31s 
+epoch 8 batch 83 processed 35,906 batch-loss 0.2276 epoch-elapsed 0h02m51s total-elapsed 0h32m32s 
+epoch 8 batch 84 processed 35,938 batch-loss 0.2145 epoch-elapsed 0h02m52s total-elapsed 0h32m33s 
+epoch 8 batch 85 processed 35,970 batch-loss 0.2498 epoch-elapsed 0h02m53s total-elapsed 0h32m33s 
+epoch 8 batch 86 processed 36,002 batch-loss 0.2148 epoch-elapsed 0h02m53s total-elapsed 0h32m34s 
+epoch 8 batch 87 processed 36,034 batch-loss 0.2495 epoch-elapsed 0h02m54s total-elapsed 0h32m35s 
+epoch 8 batch 88 processed 36,066 batch-loss 0.2214 epoch-elapsed 0h02m55s total-elapsed 0h32m36s 
+epoch 8 batch 89 processed 36,098 batch-loss 0.2242 epoch-elapsed 0h02m56s total-elapsed 0h32m37s 
+epoch 8 batch 90 processed 36,130 batch-loss 0.2147 epoch-elapsed 0h02m57s total-elapsed 0h32m37s 
+# Dev Average Loss: 0.259 (MSE) -> 0.509 (RMSD)
+epoch 8 batch 91 processed 36,162 batch-loss 0.2347 epoch-elapsed 0h03m18s total-elapsed 0h32m59s 
+epoch 8 batch 92 processed 36,194 batch-loss 0.2208 epoch-elapsed 0h03m19s total-elapsed 0h33m00s 
+epoch 8 batch 93 processed 36,226 batch-loss 0.2348 epoch-elapsed 0h03m20s total-elapsed 0h33m01s 
+epoch 8 batch 94 processed 36,258 batch-loss 0.2591 epoch-elapsed 0h03m21s total-elapsed 0h33m01s 
+epoch 8 batch 95 processed 36,290 batch-loss 0.2308 epoch-elapsed 0h03m21s total-elapsed 0h33m02s 
+epoch 8 batch 96 processed 36,322 batch-loss 0.2420 epoch-elapsed 0h03m22s total-elapsed 0h33m03s 
+epoch 8 batch 97 processed 36,354 batch-loss 0.1989 epoch-elapsed 0h03m23s total-elapsed 0h33m04s 
+epoch 8 batch 98 processed 36,386 batch-loss 0.2066 epoch-elapsed 0h03m24s total-elapsed 0h33m05s 
+epoch 8 batch 99 processed 36,418 batch-loss 0.2213 epoch-elapsed 0h03m25s total-elapsed 0h33m05s 
+epoch 8 batch 100 processed 36,450 batch-loss 0.2459 epoch-elapsed 0h03m25s total-elapsed 0h33m06s 
+epoch 8 batch 101 processed 36,482 batch-loss 0.2544 epoch-elapsed 0h03m26s total-elapsed 0h33m07s 
+epoch 8 batch 102 processed 36,514 batch-loss 0.2316 epoch-elapsed 0h03m27s total-elapsed 0h33m08s 
+epoch 8 batch 103 processed 36,546 batch-loss 0.2379 epoch-elapsed 0h03m28s total-elapsed 0h33m09s 
+epoch 8 batch 104 processed 36,578 batch-loss 0.2406 epoch-elapsed 0h03m29s total-elapsed 0h33m09s 
+# Dev Average Loss: 0.261 (MSE) -> 0.511 (RMSD)
+epoch 8 batch 105 processed 36,610 batch-loss 0.2356 epoch-elapsed 0h03m50s total-elapsed 0h33m31s 
+epoch 8 batch 106 processed 36,642 batch-loss 0.2288 epoch-elapsed 0h03m51s total-elapsed 0h33m32s 
+epoch 8 batch 107 processed 36,674 batch-loss 0.2304 epoch-elapsed 0h03m52s total-elapsed 0h33m33s 
+epoch 8 batch 108 processed 36,706 batch-loss 0.2703 epoch-elapsed 0h03m53s total-elapsed 0h33m34s 
+epoch 8 batch 109 processed 36,738 batch-loss 0.2204 epoch-elapsed 0h03m54s total-elapsed 0h33m34s 
+epoch 8 batch 110 processed 36,770 batch-loss 0.2160 epoch-elapsed 0h03m55s total-elapsed 0h33m35s 
+epoch 8 batch 111 processed 36,802 batch-loss 0.2577 epoch-elapsed 0h03m55s total-elapsed 0h33m36s 
+epoch 8 batch 112 processed 36,834 batch-loss 0.2261 epoch-elapsed 0h03m56s total-elapsed 0h33m37s 
+epoch 8 batch 113 processed 36,866 batch-loss 0.2474 epoch-elapsed 0h03m57s total-elapsed 0h33m38s 
+epoch 8 batch 114 processed 36,898 batch-loss 0.2231 epoch-elapsed 0h03m58s total-elapsed 0h33m39s 
+epoch 8 batch 115 processed 36,930 batch-loss 0.2212 epoch-elapsed 0h03m59s total-elapsed 0h33m39s 
+epoch 8 batch 116 processed 36,962 batch-loss 0.2499 epoch-elapsed 0h04m00s total-elapsed 0h33m40s 
+epoch 8 batch 117 processed 36,994 batch-loss 0.2435 epoch-elapsed 0h04m00s total-elapsed 0h33m41s 
+epoch 8 batch 118 processed 37,026 batch-loss 0.1984 epoch-elapsed 0h04m01s total-elapsed 0h33m42s 
+epoch 8 batch 119 processed 37,058 batch-loss 0.2506 epoch-elapsed 0h04m02s total-elapsed 0h33m43s 
